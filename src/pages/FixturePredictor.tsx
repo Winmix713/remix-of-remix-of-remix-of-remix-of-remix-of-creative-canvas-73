@@ -328,6 +328,15 @@ export function FixturePredictor() {
         }}
       />
 
+      <CoreStrategySelector
+        value={strategy}
+        readout={draft?.strategy ?? null}
+        running={running}
+        onChange={handleStrategyChange}
+      />
+
+
+
       {noData ? (
         <StateEmptyPanel
           title="Nincs betöltött adat"
