@@ -25,6 +25,8 @@ import {
   StateProgress
 } from '../components/winmix/PanelState';
 import { RoundBuilder } from '../components/winmix/RoundBuilder';
+import { CoreStrategySelector } from '../components/winmix/CoreStrategySelector';
+
 import { SlipPanel } from '../components/winmix/SlipPanel';
 import { CoreStatusStrip } from '../components/winmix/predictor/CoreStatusStrip';
 import { CoreDiagnosticsPanel } from '../components/winmix/predictor/CoreDiagnosticsPanel';
