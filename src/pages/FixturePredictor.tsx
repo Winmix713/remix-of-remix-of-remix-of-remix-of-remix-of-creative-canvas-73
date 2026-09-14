@@ -410,14 +410,8 @@ export function FixturePredictor() {
               </StateNotice>
             ) : null}
 
-            <CoreStrategySelector
-              value={strategy}
-              readout={draft?.strategy ?? null}
-              running={running}
-              onChange={handleStrategyChange}
-            />
-
             <div
+
 
               className="grid grid-cols-1 gap-4 [@container(min-width:40rem)]:grid-cols-2"
               style={{ containerType: 'inline-size' }}
