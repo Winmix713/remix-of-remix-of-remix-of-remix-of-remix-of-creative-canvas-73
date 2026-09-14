@@ -25,6 +25,8 @@ import {
   StateProgress
 } from '../components/winmix/PanelState';
 import { RoundBuilder } from '../components/winmix/RoundBuilder';
+import { CoreStrategySelector } from '../components/winmix/CoreStrategySelector';
+
 import { SlipPanel } from '../components/winmix/SlipPanel';
 import { CoreStatusStrip } from '../components/winmix/predictor/CoreStatusStrip';
 import { CoreDiagnosticsPanel } from '../components/winmix/predictor/CoreDiagnosticsPanel';
@@ -408,7 +410,15 @@ export function FixturePredictor() {
               </StateNotice>
             ) : null}
 
+            <CoreStrategySelector
+              value={strategy}
+              readout={draft?.strategy ?? null}
+              running={running}
+              onChange={handleStrategyChange}
+            />
+
             <div
+
               className="grid grid-cols-1 gap-4 [@container(min-width:40rem)]:grid-cols-2"
               style={{ containerType: 'inline-size' }}
             >
